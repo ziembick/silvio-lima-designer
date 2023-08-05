@@ -1,0 +1,147 @@
+.arrow-portfolio {
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  bottom: 22rem;
+  margin-left: 28rem;
+}
+
+.image-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.default-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.alternate-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-switcher:hover .default-image {
+  opacity: 0;
+}
+
+.image-switcher:hover .alternate-image {
+  opacity: 1;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 0.1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1px;
+  margin: 20px;
+}
+
+.image-switcher {
+  position: relative;
+  left: 24.5rem;
+  bottom: 20rem;
+  margin: 20px;
+  width: 65rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.default-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.alternate-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.image-switcher:hover .default-image {
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.image-switcher:hover .alternate-image {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .arrow-portfolio {
+    display: none;
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    right: 24.4rem;
+    top: 15rem;
+  }
+
+  .image-switcher {
+    width: 35rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    right: 25rem;
+    top: 15rem;
+  }
+
+  .image-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55rem;
+    height: 40rem;
+    /* position: relative;
+    left: 29rem; */
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+  .arrow-portfolio {
+    position: relative;
+    right: 14.3rem;
+  }
+  .portfolio {
+    position: relative;
+    right: 20rem;
+  }
+
+  .image-switcher {
+    width: 45rem;
+    height: 30rem;
+  }
+}

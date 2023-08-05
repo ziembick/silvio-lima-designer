@@ -1,0 +1,19 @@
+.ponto-img-1 {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    padding-top: 7rem;
+}
+
+.ponto-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ponto-bank-2 {
+    width: 80%;
+    position: relative;
+    left: 10%;
+}

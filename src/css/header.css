@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nova+Square&family=Roboto:wght@100;400&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul: #10659e;
+  --azul-hover: #03263d;
+  --branco: #fff;
+}
+
+.exp {
+  color: var(--azul);
+}
+
+.section__container-text-wrapper {
+  position: relative;
+  bottom: 19rem;
+  margin-left: 55rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.section__container-text-silvio {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+.section__container-text-silvio2 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.section__container-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  color: var(--azul);
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.section__container {
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+.logos-container {
+  position: absolute;
+  top: 1rem;
+  left: 80rem;
+}
+
+.section__container-ig_logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  position: relative;
+  left: 91rem;
+}
+
+.section__container-ig_behance_logo {
+  margin-top: 10px;
+  position: relative;
+  left: 92.5rem;
+}
+
+.section__container-ig_dribble_logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  position: relative;
+  left: 94rem;
+}
+
+.container-div {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.background-container {
+  background-color: rgb(179, 174, 174);
+  height: 170rem;
+}
+
+.tucafe-img-header,
+.ponto-img-header,
+.aqua-img-header,
+.provu-img-header,
+.ydent-img-header,
+.sunergy-img-header {
+  width: 90rem;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.tucafe-img-header:hover,
+.ponto-img-header:hover,
+.aqua-img-header:hover,
+.provu-img-header:hover,
+.ydent-img-header:hover,
+.sunergy-img-header:hover {
+  transform: scale(1.2);
+}
+
+.tucafe-img-header {
+  height: 50.7rem;
+}
+
+.images-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 0.1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 9px;
+  justify-content: center;
+  align-items: center;
+  bottom: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__container-text-wrapper {
+    position: relative;
+    bottom: 1rem;
+    margin-left: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    /* text-align: justify; */
+  }
+
+  .section__container-text-silvio {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    /* text-align: justify; */
+  }
+  .section__container-text-silvio2 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+  }
+
+  .section__container {
+    background-color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .images-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .background-container {
+    background-color: rgb(179, 174, 174);
+    height: 150rem;
+  }
+
+  .tucafe-img-header,
+  .ponto-img-header,
+  .aqua-img-header,
+  .provu-img-header,
+  .ydent-img-header,
+  .sunergy-img-header {
+    width: 35rem;
+    height: 25rem;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    margin: 2px;
+  }
+
+  .image-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .tucafe-img-header,
+  .ponto-img-header,
+  .aqua-img-header,
+  .provu-img-header,
+  .ydent-img-header,
+  .sunergy-img-header {
+    width: 60rem;
+    height: 40rem;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    margin: 2px;
+  }
+
+  .image-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .background-container {
+    background-color: rgb(179, 174, 174);
+    height: 250rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+  .tucafe-img-header,
+  .ponto-img-header,
+  .aqua-img-header,
+  .provu-img-header,
+  .ydent-img-header,
+  .sunergy-img-header {
+    width: 60rem;
+    height: 40rem;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    margin: 2px;
+  }
+
+  .image-container {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .background-container {
+    background-color: rgb(179, 174, 174);
+    height: 130rem;
+  }
+
+  .section__container-text-wrapper {
+    position: relative;
+    bottom: 19rem;
+    margin-left: 29rem;
+    font-family: "Roboto", sans-serif;
+  }
+}

@@ -1,0 +1,186 @@
+body {
+  background-color: #0a0a0a;
+}
+
+form {
+  position: relative;
+  left: 20rem;
+  bottom: 30rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 50vh;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+input {
+  margin: 0;
+  width: 50rem;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 12px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+input:focus {
+  border: 2px solid var(--azul);
+}
+
+textarea {
+  width: 50rem;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 7px;
+  outline: none;
+  border-radius: 12px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+textarea:focus {
+  border: 2px solid var(--azul);
+}
+
+label {
+  margin-top: 1rem;
+  color: white;
+  padding-bottom: 10px;
+  font-family: "Roboto";
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: var(--azul);
+  border-radius: 12px;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background: var(--azul-hover);
+  transition: 0.1 ease-in;
+}
+
+::placeholder {
+  color: var(--azul);
+  font-family: "Roboto";
+  position: relative;
+  padding-left: 17rem;
+}
+
+.nome::placeholder {
+  padding-left: 20rem;
+}
+
+.email::placeholder {
+  padding-left: 19.6rem;
+}
+
+.mensagem::placeholder {
+  padding-top: 3rem;
+  padding-left: 17rem;
+}
+
+.smile {
+  position: absolute;
+  right: 45rem;
+  top: 20rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.arrow-contact {
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  right: 24rem;
+}
+
+@media screen and (max-width: 768px) {
+  .arrow-contact {
+    display: none;
+  }
+
+  .form-div {
+    position: relative;
+    top: 20rem;
+    right: 15rem;
+  }
+
+  input {
+    margin: 0;
+    width: 35rem;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+
+  textarea {
+    width: 35rem;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+
+  ::placeholder {
+    color: var(--azul);
+    font-family: "Roboto";
+    position: relative;
+    right: 7.5rem;
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .form-div {
+    position: relative;
+    top: 20rem;
+    right: 11rem;
+  }
+  input {
+    margin: 0;
+    width: 50rem;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+
+  textarea {
+    width: 50rem;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+
+  ::placeholder {
+    color: var(--azul);
+    font-family: "Roboto";
+    position: relative;
+    right: 0;
+  }
+}
+
+/* @media screen and (min-width: 1280px) {
+  .form-div {
+    position: relative;
+    top: 20rem;
+    right: 4rem;
+  }
+} */

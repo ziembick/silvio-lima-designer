@@ -1,0 +1,132 @@
+.sliderStyles {
+  height: 100%;
+  position: relative;
+}
+
+.leftArrowStyles {
+  position: absolute;
+  top: 53%;
+  transform: translate(0, 50%);
+  left: -30rem;
+  font-size: 45px;
+  color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightArrowStyles {
+  position: absolute;
+  bottom: 18%;
+  transform: translate(0, -50%);
+  right: -400px;
+  font-size: 45px;
+  color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slideStyles {
+  position: relative;
+  bottom: 4rem;
+  right: 25rem;
+  width: 130rem;
+  height: 60rem;
+  border-radius: 12px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+
+/* .slideStyles:hover {
+  transform: scale(1.1);
+} */
+
+.dotsContainerStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.dotStyles {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.5;
+  color: grey;
+}
+
+.dotStyles.active {
+  opacity: 1;
+  color: black;
+}
+
+.containerStyle {
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+}
+
+/* .textOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  transform: 0.3s ease;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 270px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  transform: translateY(100%);
+  transition: transform 800ms ease-in-out;
+} */
+
+/* .slideStyles:hover .textOverlay {
+  transform: translateY(0);
+} */
+
+/* .slideStyles:hover::before {
+  content: "Tuca Cafe";
+}
+
+.slideStyles:nth-of-type(2):hover::before {
+  content: "Ponto Bank";
+}
+
+.slideStyles::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slideStyles:hover::before {
+  opacity: 1;
+} */
+
+@media screen and (max-width: 768px) {
+  /* .slideWrapper {
+
+  } */
+
+  .containerStyle {
+    width: 10px;
+    height: 400px;
+    /* margin: 0 auto; */
+    position: relative;
+    top: -30px;
+  }
+}
